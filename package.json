@@ -8,5 +8,8 @@
     "sass": "sass --watch ./sass/main.scss:public/css/styles.css"
   },
   "author": "jad",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
 }
