@@ -51,17 +51,17 @@ h2 {
   }
 }
 
-// @keyframes pulse {
-//   0% {
-//     transform: scaleX(1);
-//   }
-//   50% {
-//     transform: scaleX(2);
-//   }
-//   100% {
-//     transform: scaleX(1);
-//   }
-// }
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 @media screen and (max-width: 415px) {
   html {
