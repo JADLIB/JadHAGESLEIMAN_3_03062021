@@ -48,17 +48,6 @@ h2 {
   color: #ff79da;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scaleX(1);
-  }
-  50% {
-    transform: scaleX(2);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 @media screen and (max-width: 415px) {
   html {
     width: 100%;
