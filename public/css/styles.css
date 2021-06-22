@@ -35,17 +35,22 @@ h2 {
 .single-box i {
   display: flex;
   justify-content: center;
-  animation-name: pulse;
-  color: #9356dc;
+  color: transparent;
+  stroke: black;
   font-size: 15px;
   border-radius: 50%;
   transition-duration: 0.5s;
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px black;
 }
 .single-box i:hover {
-  animation-name: pulse;
-  transition-duration: 0.6;
-  transform: scale(2);
-  color: #ff79da;
+  animation: pulse 0.7s ease-in;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px transparent;
+  -webkit-text-fill-color: linear, left top, left bottom, from(#9356dc), to(#ff79da);
 }
 
 @keyframes pulse {
