@@ -29,17 +29,12 @@ h1 {
   font-family: "Shrikhand";
 }
 
-h2 {
+h2,
+h3 {
   font-family: "Roboto";
 }
 
 /********Animation Rotation*********/
-
-.icon-rotation {
-  display: inline;
-  vertical-align: middle;
-}
-
 .rotation {
   display: flex;
   flex-direction: column;
@@ -65,13 +60,12 @@ h2 {
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
 }
 
 .rotation-box i {
   display: flex;
   justify-content: flex-end;
-  vertical-align: middle;
   color: white;
   stroke: black;
   font-size: 20px;
