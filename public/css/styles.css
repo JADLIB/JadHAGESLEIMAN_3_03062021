@@ -39,29 +39,18 @@ h3 {
   margin: 15px;
 }
 
-.rotation-card {
+.entrees-card {
   margin: 15px 0 15px 0;
   border-radius: 30px;
   font-family: "Roboto";
-  display: inline;
+  display: flex;
   flex-direction: row;
   background-color: #e0e0e0;
   padding: 10px;
   box-shadow: 0px 0px 28px -10px black;
 }
 
-.rotation-card i {
-  display: flex;
-}
-
-.rotation-card p {
-  font-family: "Roboto";
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-
-.rotation-box i {
+.fa-check-circle {
   display: flex;
   justify-content: flex-end;
   color: white;
@@ -71,8 +60,32 @@ h3 {
   transition-duration: 1.5s;
   background-clip: padding-box;
 }
-.rotation-box i:hover {
+.fa-check-circle:hover {
   transform: rotate(-360deg);
+}
+
+.rotation-box {
+  background-color: #99e2d0;
+  padding: 25px;
+  display: flex;
+  margin-left: 0px;
+}
+
+.text-card {
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: 64px;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.overflow {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /********Animation coeur*********/
@@ -89,7 +102,7 @@ h3 {
   -webkit-text-stroke: 1px black;
 }
 .single-box i:hover {
-  animation: pulse 1s ease-in;
+  animation: pulse 1.2s ease-in;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
   background-clip: padding-box;
   -webkit-background-clip: text;
