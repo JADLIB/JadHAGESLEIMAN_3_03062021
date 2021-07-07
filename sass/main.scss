@@ -96,15 +96,22 @@ h3 {
   display: flex;
   justify-content: center;
   color: transparent;
-  stroke: black;
-  font-size: 15px;
+  // stroke: black;
+  font-size: 20px;
   border-radius: 50%;
-  transition-duration: 1.5s;
   background-clip: padding-box;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px black;
+}
+.relative {
+  position: relative;
+  right: 0px;
+  top: 4px;
+  font-size: 20px;
+  -webkit-text-stroke: 1px black;
   &:hover {
-    animation: pulse 1.2s ease-in;
+    animation: filling 0.5s ease-in;
+    -webkit-text-stroke: 1px black;
     background: -webkit-linear-gradient(#9356dc, #ff79da);
     background-clip: padding-box;
     -webkit-background-clip: text;
@@ -114,15 +121,30 @@ h3 {
   }
 }
 
-@keyframes pulse {
+@keyframes filling {
   0% {
-    transform: scale(1);
+    transform: scale(0.1);
+    -webkit-text-stroke: 1px black;
+  }
+  25% {
+    transform: scale(0.25);
+    -webkit-text-stroke: 1px black;
   }
   50% {
-    transform: scale(2);
+    transform: scale(0.75);
+    -webkit-text-stroke: 1px black;
+  }
+  75% {
+    transform: scale(1);
+    -webkit-text-stroke: 1px black;
+  }
+  80% {
+    transform: scale(1.5);
+    -webkit-text-stroke: 1px black;
   }
   100% {
     transform: scale(1);
+    -webkit-text-stroke: 1px black;
   }
 }
 
