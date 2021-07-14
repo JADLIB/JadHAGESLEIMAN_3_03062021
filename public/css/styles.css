@@ -375,6 +375,11 @@ h3 {
     padding-top: 5px;
   }
 
+  /**********Pages Menu************/
+  .nom_restaurant h2 {
+    font-family: "Shrikhand";
+  }
+
   /**********Footer************/
   footer {
     background-color: #3b3838;
