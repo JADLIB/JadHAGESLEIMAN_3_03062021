@@ -60,13 +60,13 @@ h3 {
 
 .entrees-card {
   margin: 15px 0 15px 0;
-  border-radius: 30px;
+  border-radius: 14px;
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(255, 255, 255);
   // padding: 10px;
-  box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 1);
   overflow: hidden;
   &:hover {
     .rotation-box {
@@ -75,7 +75,7 @@ h3 {
       // position: relative;
       display: flex;
       transition: width 1s ease-in-out;
-      width: 18%;
+      width: 24%;
     }
     .fa-check-circle {
       transform: rotate(-360deg);
@@ -89,7 +89,7 @@ h3 {
   color: white;
   stroke: black;
   font-size: 20px;
-  border-radius: 50%;
+  border-radius: 10%;
   transition-duration: 1.5s;
   background-clip: padding-box;
   &:hover {
@@ -104,7 +104,7 @@ h3 {
   display: flex;
   width: 0%;
   background-color: #99e2d0;
-  border-radius: 0px 12px 12px 0;
+  border-radius: 0px 8px 8px 0;
   color: white;
   margin: auto;
   margin-right: -50px;
@@ -117,18 +117,6 @@ h3 {
     //   position: relative;
   }
 }
-
-// @keyframes translate {
-//   0% {
-//     transform: translateX(100px);
-//   }
-//   50% {
-//     transform: translateX(-50px);
-//   }
-//   100% {
-//     transform: translateX(0px);
-//   }
-// }
 
 .text-card {
   width: 100%;
@@ -159,24 +147,11 @@ h3 {
 
 .price {
   float: right;
-  padding-right: 5px;
+  padding-right: 45px;
   padding-bottom: 4px;
 }
 
 /********Animation coeur*********/
-
-// .single-box i {
-//   display: flex;
-//   justify-content: center;
-//   color: transparent;
-//   // stroke: black;
-//   // font-size: 20px;
-//   background-clip: padding-box;
-//   -webkit-background-clip: text;
-//   // &:hover {
-//   //   -webkit-text-stroke: 1px rgb(255, 255, 255);
-//   // }
-// }
 
 .single-box {
   padding: 15px;
@@ -420,11 +395,39 @@ h3 {
     }
   }
 
-  /**********Pages Menu************/
+  /*********Pages Resto************/
+
+  .photo-resto {
+    img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      margin-top: 10px;
+    }
+  }
+  .menu-entier {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: -60px;
+    z-index: 1;
+    background-color: #f3f3f3;
+  }
 
   .nom_restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     h2 {
+      padding: 0px 0px 0px 20px;
       font-family: "Shrikhand";
+    }
+    .single-box {
+      margin-top: 14px;
     }
   }
 
