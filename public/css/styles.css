@@ -60,6 +60,7 @@ h3 {
   flex-direction: row;
   background-color: #e0e0e0;
   box-shadow: 0px 0px 28px -10px black;
+  overflow: hidden;
 }
 .entrees-card:hover .rotation-box {
   display: flex;
@@ -94,6 +95,7 @@ h3 {
   border-radius: 0px 12px 12px 0;
   color: white;
   margin: auto;
+  margin-right: -50px;
 }
 .rotation-box:hover {
   display: flex;
@@ -135,32 +137,30 @@ h3 {
 }
 
 /********Animation coeur*********/
-.single-box i {
+.single-box {
+  padding: 15px;
   display: flex;
-  justify-content: center;
-  color: transparent;
-  font-size: 20px;
-  border-radius: 50%;
-  background-clip: padding-box;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1px black;
-}
-.single-box i:hover {
-  -webkit-text-stroke: 1px white;
+  height: 22px;
+  width: 23px;
 }
 
-.relative {
+.stroke {
   position: relative;
   right: 0px;
-  top: 4px;
-  font-size: 20px;
-  -webkit-text-stroke: 1px white;
+  color: black;
 }
-.relative:hover {
-  animation: filling 0.5s ease-in;
-  -webkit-text-stroke: 1px transparent;
+
+.fill {
+  font-size: 18px;
+  position: relative;
+  right: 17px;
+  top: -1px;
+  color: transparent;
+}
+.fill:hover {
+  animation: filling 0.3s ease-in;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background-clip: padding-box;
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px transparent;
   -webkit-text-fill-color: linear, left top, left bottom, from(#9356dc), to(#ff79da);
@@ -168,10 +168,10 @@ h3 {
 
 @keyframes filling {
   0% {
-    transform: scale(0.1);
+    transform: scale(0);
   }
   25% {
-    transform: scale(0.25);
+    transform: scale(0.5);
   }
   50% {
     transform: scale(0.75);
@@ -269,12 +269,6 @@ h3 {
   }
 
   /*******Fonctionnement************/
-  .single-box {
-    padding: 15px;
-    display: flex;
-    border-radius: 50%;
-  }
-
   .fonctionnement {
     display: flex;
     flex-direction: column;
