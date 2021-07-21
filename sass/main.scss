@@ -68,6 +68,86 @@
 
 /***********Version Desktop**************/
 
+/*********Loader**********/
+.loader {
+  width: 99%;
+  height: 100%;
+  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+  animation: cachefond 5s forwards;
+  font-family: "Shrikhand";
+  font-size: 50px;
+}
+
+@keyframes cachefond {
+  0% {
+    z-index: 100;
+  }
+
+  99% {
+    z-index: 100;
+  }
+
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
+}
+
+.loader1 {
+  --delay: 0.1s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+
+.loader2 {
+  --delay: 0.2s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+
+.loader3 {
+  --delay: 0.4s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+.loader4 {
+  --delay: 0.5s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+.loader5 {
+  --delay: 0.6s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+.loader6 {
+  --delay: 0.7s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+.loader7 {
+  --delay: 0.8s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+.loader8 {
+  --delay: 0.9s;
+  animation: lettres 1s var(--delay) infinite ease-in;
+}
+
+@keyframes lettres {
+  0%,
+  100% {
+    color: #9356dc;
+    transform: translateY(0);
+  }
+  50% {
+    color: #ff79da;
+    transform: translateY(20px);
+  }
+}
+
+/*********Loader**********/
+
 h1 {
   font-family: "Shrikhand";
 }
