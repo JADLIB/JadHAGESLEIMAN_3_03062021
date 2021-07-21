@@ -42,12 +42,9 @@
 
 .photo-resto {
   img {
-    background-image: url("../assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     width: 100%;
-    // object-fit: contain;
     // position: relative;
     // z-index: -1;
   }
@@ -59,6 +56,8 @@
   flex-direction: column;
   margin: 0 auto;
   width: 70%;
+  position: relative;
+  z-index: 2;
 }
 
 .nom_restaurant {
@@ -84,6 +83,42 @@ h3 {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-iteration-count: 1;
+}
+
+.card1 {
+  animation-delay: 0.1s;
+}
+
+.card2 {
+  animation-delay: 0.3s;
+}
+
+.card3 {
+  animation-delay: 0.5s;
+}
+
+.card4 {
+  animation-delay: 0.7s;
+}
+
+.card5 {
+  animation-delay: 0.9s;
+}
+
+.card6 {
+  animation-delay: 1.1s;
+}
+
+.card7 {
+  animation-delay: 1.3s;
+}
+
+.card8 {
+  animation-delay: 1.5s;
+}
+
+.card9 {
+  animation-delay: 1.7s;
 }
 
 @keyframes fadeIn {
