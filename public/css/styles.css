@@ -1,28 +1,12 @@
-/*
-@import "./utils/variables";
-
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-
-@import "./base/base";
-@import "./base/typography";
-
-@import "./components/buttons";
-
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
-
-
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
- */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/********Global**********/
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /***********Version Desktop**************/
 .logo {
   display: flex;
@@ -61,12 +45,12 @@
 /***********Version Desktop**************/
 /*********Loader**********/
 .loader {
+  top: 0;
   width: 100%;
   height: 100%;
-  padding-top: 300px;
+  align-items: center;
   display: flex;
   justify-content: center;
-  text-align: center;
   position: fixed;
   z-index: 3;
   background-color: white;
@@ -149,9 +133,11 @@ h3 {
 
 /********Animation FadeIn*********/
 .entrees-card {
+  opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .card1 {
@@ -451,6 +437,9 @@ footer i {
   width: 100%;
   justify-content: space-evenly;
 }
+.fonctionnement .h2 {
+  display: flex;
+}
 
 .fonctionnement-card {
   width: auto;
@@ -458,7 +447,6 @@ footer i {
   border-radius: 30px;
   font-family: "Roboto";
   display: flex;
-  flex-direction: row;
   background-color: #e0e0e0;
   box-shadow: 0px 0px 28px -10px black;
 }
@@ -481,10 +469,6 @@ footer i {
   margin-left: 5px;
   font-weight: bold;
   padding-right: 70px;
-}
-
-.h2 {
-  margin-left: 300px;
 }
 
 .box-number {
@@ -576,7 +560,7 @@ footer i {
 /********Media Queries************/
 /********Media Queries************/
 /********Media Queries************/
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 900px) {
   .h2 {
     margin-left: 0px;
   }
@@ -688,7 +672,7 @@ footer i {
     justify-content: space-between;
   }
   .nom_restaurant h2 {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
     font-family: "Shrikhand";
   }
   .nom_restaurant .single-box {
@@ -712,7 +696,7 @@ footer i {
   .entrees-card:hover .rotation-box {
     display: flex;
     transition: width 1s ease-in-out;
-    width: 24%;
+    width: 18%;
     /**largeur de la zone verte en hover*/
   }
   .entrees-card:hover .fa-check-circle {
