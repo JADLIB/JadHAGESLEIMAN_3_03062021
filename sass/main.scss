@@ -220,7 +220,7 @@ h3 {
   flex-direction: row;
   background-color: rgb(255, 255, 255);
   // padding: 10px;
-  box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 1);
+  box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   &:hover {
     .rotation-box {
@@ -324,6 +324,7 @@ h3 {
   display: flex;
   height: 22px;
   width: 23px;
+  transform: scale(1.5);
 }
 
 .stroke {
@@ -427,7 +428,7 @@ footer i {
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
   border: none;
-  box-shadow: 0px 4px 5px 0px rgba(167, 167, 167, 1);
+  box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   transition-duration: 0.5s;
   &:hover {
     animation-name: pulse;
@@ -461,13 +462,22 @@ footer i {
 
 .fonctionnement {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 auto;
-  width: 100%;
+  width: 70%;
   justify-content: space-evenly;
-  & .h2 {
-    display: flex;
+  & h2 {
+    font-family: "Roboto";
+    justify-content: center;
+    margin-left: 10px;
   }
+}
+
+.fonctionnement-row {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .fonctionnement-card {
@@ -478,7 +488,7 @@ footer i {
   display: flex;
   // flex-direction: row;
   background-color: rgb(224, 224, 224);
-  box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 1);
+  box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   justify-content: space-evenly;
   transform: scale(0.9);
   &:hover {
@@ -538,16 +548,19 @@ footer i {
 /**********Restaurant************/
 
 .restaurant {
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
+  & h2 {
+    font-family: "Roboto";
+    margin-left: 10px;
+  }
 }
 
 .card_restaurant {
-  box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 1);
+  box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   margin-top: 20px;
 }
@@ -607,7 +620,7 @@ footer i {
 /********Media Queries************/
 /********Media Queries************/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .h2 {
     margin-left: 0px;
   }
@@ -640,15 +653,17 @@ footer i {
   }
 
   .restaurant {
+    margin-top: 40px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    background-color: #f4f4f4;
   }
 
   .card_restaurant {
-    box-shadow: 0px 0px 28px -10px rgba(0, 0, 0, 1);
+    box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     margin-top: 20px;
   }
@@ -692,7 +707,13 @@ footer i {
   /*********Fonctionnnement************/
 
   .fonctionnement {
-    width: 90%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .fonctionnement-row {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -700,7 +721,7 @@ footer i {
 
   .box-number {
     position: relative;
-    right: 50px;
+    right: 60px;
     margin: 20px;
     width: 30px;
     background: #8f29be;
@@ -759,7 +780,7 @@ footer i {
     flex-direction: row;
     background-color: rgb(255, 255, 255);
     // padding: 10px;
-    box-shadow: 0px 0px 18px -10px rgba(0, 0, 0, 1);
+    box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     &:hover {
       .rotation-box {
