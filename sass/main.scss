@@ -40,14 +40,14 @@ a {
 
 .menu-entier {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
   margin: 0 auto;
   width: 100%;
-  position: relative;
-  z-index: 2;
+  // position: relative;
+  // z-index: 2;
   top: -60px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50px;
 }
 
@@ -56,7 +56,18 @@ a {
   justify-content: space-between;
   flex-direction: row;
   font-family: "Shrikhand";
-  padding-left: 20px;
+  padding: 0px 45px 0px 45px;
+}
+
+.titremenu_menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: white;
 }
 
 /***********Version Desktop**************/
@@ -222,7 +233,7 @@ h3 {
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  background-color: rgb(255, 255, 255);
+  background-color: #f4f4f4;
   // padding: 10px;
   box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -450,7 +461,6 @@ h3 {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
 }
 
 .fonctionnement-card {
@@ -595,7 +605,7 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  padding: 30px;
 }
 .commander div {
   display: flex;
@@ -795,16 +805,31 @@ footer a {
     border-top-right-radius: 40px;
     justify-content: center;
     width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    // z-index: 2;
+    // top: -60px;
+    border-radius: 50px;
+  }
+
+  .titremenu_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     top: -60px;
-    z-index: 1;
-    background-color: #f3f3f3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #f4f4f4;
   }
 
   .nom_restaurant {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
+
     h2 {
       padding: 0px 0px 0px 20px;
       font-family: "Shrikhand";
@@ -819,7 +844,6 @@ footer a {
   }
 
   .entrees-card {
-    margin: 15px 7px 15px 7px;
     border-radius: 14px;
     font-family: "Roboto";
     display: flex;
@@ -869,12 +893,12 @@ footer a {
 
 @media screen and (min-width: 900px) {
   .entrees-card:hover .rotation-box {
-    width: 7%;
+    width: 28%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .entrees-card:hover .rotation-box {
-    width: 5%;
+    width: 20%;
   }
 }
