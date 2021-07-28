@@ -435,6 +435,8 @@ h3 {
 }
 
 .entrees {
+  width: 99%;
+  padding: 5px;
   h3 {
     border-bottom: 3px solid #99e2d0;
     width: 40px;
@@ -464,12 +466,11 @@ h3 {
 }
 
 .fonctionnement-card {
-  width: auto;
+  width: 100%;
   margin: 10px 0 10px 0;
   border-radius: 30px;
   font-family: "Roboto";
   display: flex;
-  // flex-direction: row;
   background-color: rgb(224, 224, 224);
   box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   justify-content: space-evenly;
@@ -492,12 +493,9 @@ h3 {
   flex-direction: column;
   justify-content: center;
   font-weight: bold;
-  padding-right: 70px;
 }
 
 .box-number {
-  position: relative;
-  right: 33px;
   margin: 20px;
   width: 30px;
   background: #8f29be;
@@ -605,7 +603,6 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
 }
 .commander div {
   display: flex;
@@ -775,8 +772,6 @@ footer a {
   }
 
   .box-number {
-    position: relative;
-    right: 60px;
     margin: 20px;
     width: 30px;
     background: #8f29be;
