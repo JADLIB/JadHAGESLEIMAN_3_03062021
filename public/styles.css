@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /***COMMENTAIRE GENERAL****/
 /*Tout le CSS est dans ce même fichier mais tout est rangé dans l'ordre. 
 Et est précisé par commentaire, de plus le nom des classes correspond à la partie en question dans le fichier .html correspondant
@@ -29,6 +28,7 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 615px;
 }
 
 .menu-entier {
@@ -36,13 +36,12 @@ a {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   position: relative;
   z-index: 2;
   top: -60px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-radius: 50px;
-  padding: 5px;
 }
 
 .nom_restaurant {
@@ -312,6 +311,14 @@ h3 {
   width: 23px;
   transform: scale(1.5);
 }
+.single-box:hover .fill {
+  animation: filling 0.3s ease-in;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px transparent;
+  -webkit-text-fill-color: linear, left top, left bottom, from(#9356dc), to(#ff79da);
+}
 
 .stroke {
   position: relative;
@@ -325,14 +332,6 @@ h3 {
   right: 17px;
   top: -1px;
   color: transparent;
-}
-.fill:hover {
-  animation: filling 0.3s ease-in;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1px transparent;
-  -webkit-text-fill-color: linear, left top, left bottom, from(#9356dc), to(#ff79da);
 }
 
 @keyframes filling {
@@ -362,7 +361,6 @@ h3 {
   flex-direction: column;
   width: 100%;
   background-color: whitesmoke;
-  border-radius: 50px;
 }
 
 .explorer div {
@@ -405,6 +403,7 @@ h3 {
   border-bottom: 3px solid #99e2d0;
   width: 40px;
   font-weight: lighter;
+  margin-left: 10px;
 }
 
 /*******Fonctionnement************/
@@ -564,6 +563,37 @@ h3 {
   padding-top: 5px;
 }
 
+/***********Bouton commander********/
+.commander {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.commander div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.commander button {
+  margin: 20px;
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  border: none;
+  box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+}
+.commander button:hover {
+  animation-name: pulse;
+  transform: scale(1.1);
+  color: #ff79da;
+  color: white;
+}
+
 /**********Footer************/
 footer {
   background-color: #3b3838;
@@ -597,6 +627,10 @@ footer li {
 
 footer i {
   margin: 5px;
+}
+
+footer a {
+  color: white;
 }
 
 /********Media Queries************/
@@ -648,7 +682,7 @@ footer i {
   .card_restaurant {
     box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
-    margin-top: 20px;
+    margin: 20px 7px 0px 7px;
   }
 
   .card_img {
@@ -753,7 +787,7 @@ footer i {
   }
 
   .entrees-card {
-    margin: 15px 0 15px 0;
+    margin: 15px 7px 15px 7px;
     border-radius: 14px;
     font-family: "Roboto";
     display: flex;
@@ -773,5 +807,35 @@ footer i {
   }
 }
 /**Media Query pour le width de l'animation des plats**/
+@media screen and (max-width: 375px) {
+  .entrees-card:hover .rotation-box {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  .entrees-card:hover .rotation-box {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .entrees-card:hover .rotation-box {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .entrees-card:hover .rotation-box {
+    width: 12%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .entrees-card:hover .rotation-box {
+    width: 7%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .entrees-card:hover .rotation-box {
+    width: 5%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
