@@ -435,8 +435,6 @@ h3 {
 }
 
 .entrees {
-  width: 99%;
-  padding: 5px;
   h3 {
     border-bottom: 3px solid #99e2d0;
     width: 40px;
@@ -476,7 +474,7 @@ h3 {
   // justify-content: space-evenly;
   transform: scale(0.9);
   &:hover {
-    background-color: #f4ddff;
+    background-color: #f9edff;
     box-shadow: -1px 10px 11px 0px rgba(0, 0, 0, 0.2);
   }
 }
@@ -547,6 +545,9 @@ h3 {
   box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   margin-top: 20px;
+  &:hover {
+    box-shadow: -1px 10px 11px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .card_img {
@@ -893,12 +894,12 @@ footer a {
 
 @media screen and (min-width: 900px) {
   .entrees-card:hover .rotation-box {
-    width: 28%;
+    width: 9%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .entrees-card:hover .rotation-box {
-    width: 20%;
+    width: 21%;
   }
 }
