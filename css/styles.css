@@ -263,7 +263,7 @@ h3 {
 .rotation-box:hover {
   display: flex;
   transition: width 1s ease-in-out;
-  width: 18%;
+  width: 8%;
 }
 
 .text-card {
@@ -855,7 +855,7 @@ footer a {
 }
 @media screen and (min-width: 1280px) {
   .entrees-card:hover .rotation-box {
-    width: 21%;
+    width: 27%;
   }
 }
 

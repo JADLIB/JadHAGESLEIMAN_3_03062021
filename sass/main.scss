@@ -280,7 +280,7 @@ h3 {
   &:hover {
     display: flex;
     transition: width 1s ease-in-out;
-    width: 18%;
+    width: 8%;
     //   animation: translate ease-in-out 1.5s;
     //   display: flex;
     //   position: relative;
@@ -900,6 +900,6 @@ footer a {
 
 @media screen and (min-width: 1280px) {
   .entrees-card:hover .rotation-box {
-    width: 21%;
+    width: 27%;
   }
 }
