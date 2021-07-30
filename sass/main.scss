@@ -473,10 +473,11 @@ h3 {
   display: flex;
   background-color: rgb(224, 224, 224);
   box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   transform: scale(0.9);
   &:hover {
     background-color: #f4ddff;
+    box-shadow: -1px 10px 11px 0px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -504,6 +505,8 @@ h3 {
   text-align: center;
   border-radius: 100px;
   color: white;
+  position: relative;
+  right: 34px;
 }
 
 .localisation {
@@ -780,6 +783,8 @@ footer a {
     text-align: center;
     border-radius: 100px;
     color: white;
+    position: relative;
+    right: 34px;
   }
 
   /*********Pages Resto************/

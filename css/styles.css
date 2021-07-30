@@ -447,11 +447,11 @@ h3 {
   display: flex;
   background-color: #e0e0e0;
   box-shadow: -1px 4px 9px 0px rgba(0, 0, 0, 0.2);
-  justify-content: space-evenly;
   transform: scale(0.9);
 }
 .fonctionnement-card:hover {
   background-color: #f4ddff;
+  box-shadow: -1px 10px 11px 0px rgba(0, 0, 0, 0.2);
 }
 
 .fonctionnement-card i {
@@ -478,6 +478,8 @@ h3 {
   text-align: center;
   border-radius: 100px;
   color: white;
+  position: relative;
+  right: 34px;
 }
 
 .localisation {
@@ -752,6 +754,8 @@ footer a {
     text-align: center;
     border-radius: 100px;
     color: white;
+    position: relative;
+    right: 34px;
   }
 
   /*********Pages Resto************/
