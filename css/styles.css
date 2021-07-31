@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 /***COMMENTAIRE GENERAL****/
 /*Tout le CSS est dans ce même fichier mais tout est rangé dans l'ordre. 
-Et est précisé par commentaire, de plus le nom des classes correspond à la partie en question dans le fichier .html correspondant
+Et est précisé par commentaire, de plus le nom des classes correspond à la partie en question dans le fichier .html correspondant, 
+de plus à partir de la ligne 675, il s'agit des media-queries pour le responsive. 
 */
 /********Global**********/
 a {
