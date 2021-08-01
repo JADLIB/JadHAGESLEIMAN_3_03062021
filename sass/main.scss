@@ -434,6 +434,8 @@ h3 {
 }
 
 .entrees {
+  width: 100%;
+  padding: 3px;
   h3 {
     border-bottom: 3px solid #99e2d0;
     width: 40px;
@@ -893,12 +895,12 @@ footer a {
 
 @media screen and (min-width: 900px) {
   .entrees-card:hover .rotation-box {
-    width: 9%;
+    width: 24%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .entrees-card:hover .rotation-box {
-    width: 27%;
+    width: 18%;
   }
 }
