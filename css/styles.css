@@ -263,6 +263,7 @@ h3 {
   margin-right: -50px;
 }
 .rotation-box:hover {
+  animation: rotation;
   display: flex;
   transition: width 1s ease-in-out;
   width: 8%;
@@ -295,6 +296,7 @@ h3 {
 .plate-description {
   font-weight: 300;
   padding-left: 3px;
+  font-family: "Roboto";
 }
 
 .plate-name,
