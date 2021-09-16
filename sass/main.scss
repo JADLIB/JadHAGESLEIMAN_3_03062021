@@ -279,6 +279,7 @@ h3 {
   color: white;
   margin: auto;
   margin-right: -50px;
+  transition: width 1s ease-in-out;
   &:hover {
     animation: rotation;
     display: flex;
